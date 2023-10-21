@@ -1,0 +1,19 @@
+
+<div class="container-sm">
+	<div class="container">
+		<h1>{{title}}</h1>
+	</div>
+	<div class="container-sm">
+		<nav>
+			<a routerLink="/log">
+				<button type="button" class="btn btn-info">Log</button>
+			</a>
+			<a routerLink="/controls">
+				<button type="button" class="btn btn-primary">Controls</button>
+			</a>
+		</nav>
+	</div>
+	<div class="container-sm">
+		<router-outlet></router-outlet>
+	</div>
+</div>
