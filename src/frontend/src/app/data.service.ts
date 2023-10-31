@@ -11,8 +11,8 @@ export class DataService {
   // TODO whole log pfad!
   getData(everything:boolean = false): Observable<any> {
     if (everything) {
-      return this.http.get('http://192.168.1.95:3000/database/events');
+      return this.http.get('http://127.126.124.123:3333/database/events');
     } 
-    return this.http.get('http://192.168.1.95:3000/database/events');
+    return this.http.get('http://127.126.124.123:3333/database/events');
   }
 }
