@@ -8,7 +8,11 @@ import { Observable } from 'rxjs';
 export class DataService {
   constructor(private http: HttpClient) {}
 
-  getData(): Observable<any> {
+  // TODO whole log pfad!
+  getData(everything:boolean = false): Observable<any> {
+    if (everything) {
+      return this.http.get('http://192.168.1.95:3000/database/events');
+    } 
     return this.http.get('http://192.168.1.95:3000/database/events');
   }
 }
